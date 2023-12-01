@@ -19,7 +19,7 @@ class OrderRequest extends BaseRequestApi
             'orderSku' => 'required|string',
             'offerSku' => 'required|string',
             'quantity' => 'required|numeric',
-            'price' => 'required|numeric',
+            'orderDate' => 'required|date',
         ];
     }
 }

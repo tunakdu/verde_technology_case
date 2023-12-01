@@ -22,8 +22,9 @@ class ProductRepository implements ProductInterface
         return Products::create($details);
     }
 
-    public function update(array $details,string $sku )
+    public function update(array $details, string $sku )
     {
+
         return Products::query()->where('productSku', $sku)->update($details);
     }
 
@@ -31,6 +32,5 @@ class ProductRepository implements ProductInterface
     {
         return Products::query()->where('productSku', $sku)->first()->delete();
     }
-
 
 }

@@ -16,12 +16,7 @@ class ProductRequest extends BaseRequestApi
     public function rules(): array
     {
         return [
-            'productSku' =>
-                [
-                    'required',
-                    'string',
-                    Rule::unique('products', 'productSku')
-                ],
+            'productSku' => 'sometimes|string',
             'name' => 'required|string',
             'category' => 'string',
             'price' => 'required|numeric',

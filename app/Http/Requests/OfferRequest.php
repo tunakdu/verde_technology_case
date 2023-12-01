@@ -22,7 +22,7 @@ class OfferRequest extends BaseRequestApi
         return [
             'offerSku' => 'required|string',
             'productSku' => 'required|string',
-            'sellerSku' => 'required|numeric',
+            'sellerSku' => 'required|string',
             'price' => 'required|numeric',
             'condition' => 'required|string',
             'availability' => 'required|string'

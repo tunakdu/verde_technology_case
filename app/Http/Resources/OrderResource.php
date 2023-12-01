@@ -18,7 +18,7 @@ class OrderResource extends JsonResource
             'orderSku' => $this->orderSku,
             'offerSku' => $this->offerSku,
             'quantity' => $this->quantity,
-            'price' => $this->price,
+            'orderDate' => $this->orderDate,
         ];
     }
 }
