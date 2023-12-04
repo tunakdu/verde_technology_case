@@ -28,8 +28,15 @@ composer install
 
 Env Dosyasının Değiştirilmesi 
 
+.env.example adlı dosyayı .env şeklinde değiştiriyoruz DB ile ilgili kısmı şu şekilde güncelliyoruz.
+
 ~~~bash  
-rename .env.example / .env
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=sail
+DB_PASSWORD=password
 ~~~
 
 Sail ile docker kurulumu  
