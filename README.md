@@ -26,6 +26,12 @@ Bağımlılıkların yüklenmesi
 composer install
 ~~~
 
+Env Dosyasının Değiştirilmesi 
+
+~~~bash  
+rename .env.example / .env
+~~~
+
 Sail ile docker kurulumu  
 
 ~~~bash  
